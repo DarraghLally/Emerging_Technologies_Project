@@ -13,7 +13,7 @@ The above 3 items and git repo standard items make up the submission for this pr
 #### Repository Contents
 * misc folder:
     * Assesment spec
-    * power production data - .csv and .xlsx
+    * power production data x2 - .csv and .xlsx
 * jupyter-notebook
     * Training a model to be used in power prediction
 * model.h5

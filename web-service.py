@@ -26,7 +26,8 @@ def powerPrediction():
     # make power prediction from input
     predictedValue = model.predict([windSpeedInput])
     prelist = predictedValue.tolist()
-    return {'Prediction: ':prelist[0]}
+    
+    return {'Prediction: ': prelist[0]}
 
 if __name__ == '__main__':
     app.run(debug=True,port=5001)
