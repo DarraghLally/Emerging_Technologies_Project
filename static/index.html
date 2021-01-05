@@ -9,18 +9,57 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Power Prediction</title>
+    <title>12</title>
   </head>
+
+  <!-- https://stackoverflow.com/questions/9862167/positioning-div-element-at-center-of-screen -->
+  <style>
+      .content {    
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      margin-left: -50px;
+      width: 100px;
+      height: 100px;
+    }
+    </style>
+
   <body>
-    <form>
-      <h2>Web-service</h2>
-      <!--Add input-->
 
-
-      <!--Add button-->
-
-
+    <form action="/power" method="POST">
+      <!--<label for="speed_input">Wind Speed: </label>-->
+      <label for="value">Wind Speed: </label>
+      <br>
+      <input type="word" name="value" value="1">
+      <br><br>
+      <input type="submit" value="Submit">
     </form>
+    
+    <!--
+    <div class="content">
+      <form action="/power" method="POST">
+        <div class="form-group " style= top:50px;>
+
+          <div>
+            <label for="speedInput"></label>
+          </div>       
+          <br>
+          
+          <div>
+            <input type="word" class="form-control" id="windSpeedInput" placeholder="Enter wind speed">
+          </div>
+          <br>
+          
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        
+        </div>
+      </form>
+      <h3>Power Prediction: {{}}</h3>
+    </div>
+    -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -22,8 +22,8 @@ The above 3 items and git repo standard items make up the submission for this pr
     * 
 * requirements.txt
     * 
-* index.html
-    * 
+* static folder
+    * index.html
 * .dockerignore
     * 
 * General repo files
