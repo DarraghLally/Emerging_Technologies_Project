@@ -2,7 +2,7 @@
 
 # flask for web app.
 #import flask libs we need
-from flask  import request, Flask
+from flask  import request, Flask, redirect, url_for
 # numpy for numerical work.
 import numpy as np
 # tensorflow to load model
@@ -17,7 +17,7 @@ app = Flask(__name__)
 def home():
     return app.send_static_file('index.html')
 
-@app.route("/power", methods=['POST'])
+@app.route("/", methods=['POST'])
 def powerPrediction():
     # get value
     windSpeedInput = float(request.form["value"])
@@ -26,8 +26,9 @@ def powerPrediction():
     # make power prediction from input
     predictedValue = model.predict([windSpeedInput])
     prelist = predictedValue.tolist()
-    
-    return {'Prediction: ': prelist[0]}
+    return {'value: ': prelist[0]}
+    #return redirect(url_for('power'))
+    #return app.send_static_file('result.html')
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5001)
+    app.run(debug=True)
