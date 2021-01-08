@@ -12,25 +12,28 @@ The above 3 items and git repo standard items make up the submission for this pr
 
 #### Repository Contents
 * misc folder:
-    * Assesment spec
-    * power production data x2 - .csv and .xlsx
-* jupyter-notebook
-    * Training a model to be used in power prediction
-* model.h5
-    * 
-* Dockerfile
-    * 
-* requirements.txt
-    * 
-* static folder
-    * index.html
+    * Assesment spec.
+    * power production data x2 - .csv and .xlsx.
+* static folder:
+    * index.html: Web page that displays the application.
+    * Web page background image.
 * .dockerignore
-    * 
+    * File similar to a .gitignore, which tells Docerfile what to ignore when creating the container.
+* Dockerfile:
+    * Used to create an Image, and then a Container within which my project will run.
+* Jupyter-notebook:
+    * Used to train a model that can predict a power output from a wind speed input.
+* model.h5:
+    * A model created from the power production .csv
+* requirements.txt:
+    * Used by the Dockerfile to get a list of required packages.
+* web-service.py
+    * A python script that runs our web application.
 * General repo files
     * .gitignore - python
     * README.md
 
-### How To
+### Useful Commands
 #### LINUX: How to run web-service
 ``` bash
 $ export FLASK_APP=web-service.py
@@ -55,7 +58,7 @@ docker run --name web-service-container -d -p 5000:5000 web-service-image
 ```
 
 #### References
-Web application - Dr. Ian McLoughlin; GitHub: https://github.com/ianmcloughlin/random-app/blob/master/rando.py
+random-app - Dr. Ian McLoughlin; GitHub: https://github.com/ianmcloughlin/random-app/blob/master/rando.py
 
 Flask: https://www.tutorialspoint.com/flask/flask_templates.htm
 
