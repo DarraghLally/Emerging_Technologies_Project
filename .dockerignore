@@ -1,4 +1,4 @@
-# Docker Ignore
+# Docker, ignore these please
 .git
 Dockerfile
 .gitignore

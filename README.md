@@ -33,6 +33,23 @@ The above 3 items and git repo standard items make up the submission for this pr
     * .gitignore - python
     * README.md
 
+### Run Jupyter-notebook
+1. Clone Repository
+2. Navigate to cloned folder
+3. Open in command prompt (Of your choice)
+4. Enter command: 
+```python
+jupyter-notebook
+```
+***Note Book opens in your browser.***
+In the navigation bar select:
+*Kernal*
+    *Restart & Run All*
+
+It will take a few moments for the model to be created, due to the number of neurons, their activation and the number of epochs we are training the model for.
+
+![Model Graph](readmeImgs/plot.png "Model Plot")
+
 ### Useful Commands
 #### LINUX: How to run web-service
 ``` bash
@@ -49,8 +66,6 @@ python -m flask run
 ```
 
 #### Docker: Create image and container, run
-* navigate to repo
-* run cmder
 ``` bash
 docker --version
 docker build -t web-service
@@ -63,5 +78,11 @@ random-app - Dr. Ian McLoughlin; GitHub: https://github.com/ianmcloughlin/random
 Flask: https://www.tutorialspoint.com/flask/flask_templates.htm
 
 Docker - What is a container?: https://www.docker.com/resources/what-container
+
+Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+Markdown: https://guides.github.com/features/mastering-markdown/
+
+Website: https://www.w3schools.com/
 
 

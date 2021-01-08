@@ -1,5 +1,5 @@
-# https://runnable.com/docker/python/dockerize-your-flask-application
-# Ians video on Docker
+# Adapted from: https://runnable.com/docker/python/dockerize-your-flask-application
+# and also: Ians video on Docker
 
 # Use this version of Python
 FROM python:3.8
